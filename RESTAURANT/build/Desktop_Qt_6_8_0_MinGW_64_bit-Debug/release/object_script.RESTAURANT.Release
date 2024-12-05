@@ -1,0 +1,10 @@
+release/comptoir.o
+release/cuisine.o
+release/main.o
+release/salle_restauration.o
+release/tableau_bord.o
+release/qrc_images.o
+release/moc_comptoir.o
+release/moc_cuisine.o
+release/moc_salle_restauration.o
+release/moc_tableau_bord.o

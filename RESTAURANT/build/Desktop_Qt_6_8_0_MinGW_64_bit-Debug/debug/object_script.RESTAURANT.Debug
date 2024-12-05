@@ -1,0 +1,10 @@
+debug/comptoir.o
+debug/cuisine.o
+debug/main.o
+debug/salle_restauration.o
+debug/tableau_bord.o
+debug/qrc_images.o
+debug/moc_comptoir.o
+debug/moc_cuisine.o
+debug/moc_salle_restauration.o
+debug/moc_tableau_bord.o
