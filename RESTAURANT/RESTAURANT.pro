@@ -9,14 +9,12 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    comptoir.cpp \
     cuisine.cpp \
     main.cpp \
     salle_restauration.cpp \
     tableau_bord.cpp
 
 HEADERS += \
-    comptoir.h \
     cuisine.h \
     salle_restauration.h \
     tableau_bord.h

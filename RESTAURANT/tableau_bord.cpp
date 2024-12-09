@@ -12,3 +12,4 @@ Tableau_bord::~Tableau_bord()
 {
     delete ui;
 }
+

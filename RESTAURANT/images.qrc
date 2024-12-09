@@ -1,5 +1,18 @@
 <RCC>
   <qresource>
+    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/comptoir_restaurant.png</file>
+    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/table6.png</file>
+    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/porte.png</file>
+    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/table8.png</file>
+    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/table4.png</file>
+    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/table2.png</file>
+    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/table10.png</file>
+    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/stop.png</file>
+    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/accelerate.png</file>
+    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/pause.png</file>
+    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/sol restaurant.png</file>
+    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/start.png</file>
     <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/comptoir.png</file>
+    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/comptoir_restaurant.png</file>
   </qresource>
 </RCC>
