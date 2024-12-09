@@ -32,7 +32,7 @@ public:
     QPushButton *pushButton_4;
     QTimeEdit *timeEdit;
     QPushButton *pushButton_5;
-    QGraphicsView *graphicsView;
+    QGraphicsView *Salle_Restauration;
     QFrame *Carre1;
     QFrame *Table110;
     QFrame *Table152;
@@ -107,10 +107,10 @@ public:
         pushButton_5->setStyleSheet(QString::fromUtf8("image: url(:/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/accelerate.png);\n"
 "background-color: rgb(255, 255, 255);\n"
 ""));
-        graphicsView = new QGraphicsView(centralwidget);
-        graphicsView->setObjectName("graphicsView");
-        graphicsView->setGeometry(QRect(10, 50, 1481, 661));
-        graphicsView->setStyleSheet(QString::fromUtf8("background-image: url(:/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/sol restaurant.png);"));
+        Salle_Restauration = new QGraphicsView(centralwidget);
+        Salle_Restauration->setObjectName("Salle_Restauration");
+        Salle_Restauration->setGeometry(QRect(10, 50, 1481, 661));
+        Salle_Restauration->setStyleSheet(QString::fromUtf8("background-image: url(:/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/sol restaurant.png);"));
         Carre1 = new QFrame(centralwidget);
         Carre1->setObjectName("Carre1");
         Carre1->setGeometry(QRect(170, 50, 1331, 301));

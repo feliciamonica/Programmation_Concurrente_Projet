@@ -107,7 +107,7 @@ background-color: rgb(255, 255, 255);
      <string/>
     </property>
    </widget>
-   <widget class="QGraphicsView" name="graphicsView">
+   <widget class="QGraphicsView" name="Salle_Restauration">
     <property name="geometry">
      <rect>
       <x>10</x>
