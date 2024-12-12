@@ -11,6 +11,6 @@ int main(int argc, char *argv[])
     Cuisine e;
     //w.show();
     T.show();
-    // e.show();
+    //e.show();
     return a.exec();
 }

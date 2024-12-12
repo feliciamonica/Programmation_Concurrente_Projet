@@ -22,6 +22,13 @@ private:
 
     void updateDashboard();          // Mettre à jour les données du tableau de bord
     void checkCriticalSituations();  // Vérifier les situations limites
+
+    // Méthodes pour charger les données des différentes tables
+    void loadRestaurantTableData();  // Charger les données de la table RestaurantTable
+    void loadMaterielCommunData();   // Charger les données de la table Materiel_commun
+    void loadPlatData();             // Charger les données de la table Plat
+    void loadEmployeData();          // Charger les données de la table Employe
+    void loadClientData();           // Charger les données de la table Client
 };
 
 #endif // TABLEAU_BORD_H

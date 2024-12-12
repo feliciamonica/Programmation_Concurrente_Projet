@@ -16,9 +16,11 @@ SOURCES += \
     cuisine.cpp \
     database.cpp \
     employe.cpp \
+    employe_worker.cpp \
     ingredients.cpp \
     ingredients_worker.cpp \
     location.cpp \
+    location_worker.cpp \
     main.cpp \
     materiel_commun.cpp \
     materiel_cuisine.cpp \
@@ -40,9 +42,11 @@ HEADERS += \
     cuisine.h \
     database.h \
     employe.h \
+    employe_worker.h \
     ingredients.h \
     ingredients_worker.h \
     location.h \
+    location_worker.h \
     materiel_commun.h \
     materiel_cuisine.h \
     materiel_worker.h \

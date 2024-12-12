@@ -2,7 +2,7 @@
 #define MATERIELCUISINEWORKER_H
 
 #include <QThread>
-#include "materielcuisine.h"
+#include "materiel_cuisine.h"
 
 class MaterielCuisineWorker : public QThread
 {

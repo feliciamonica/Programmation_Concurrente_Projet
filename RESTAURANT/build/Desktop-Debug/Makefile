@@ -55,15 +55,20 @@ OBJECTS_DIR   = ./
 SOURCES       = ../../client.cpp \
 		../../client_worker.cpp \
 		../../commande.cpp \
+		../../commande_worker.cpp \
 		../../cuisine.cpp \
 		../../database.cpp \
 		../../employe.cpp \
+		../../employe_worker.cpp \
 		../../ingredients.cpp \
+		../../ingredients_worker.cpp \
 		../../location.cpp \
+		../../location_worker.cpp \
 		../../main.cpp \
 		../../materiel_commun.cpp \
 		../../materiel_cuisine.cpp \
 		../../materiel_worker.cpp \
+		../../materielcuisine_worker.cpp \
 		../../menu.cpp \
 		../../plat.cpp \
 		../../plat_worker.cpp \
@@ -72,9 +77,13 @@ SOURCES       = ../../client.cpp \
 		../../salle_restauration.cpp \
 		../../tableau_bord.cpp qrc_images.cpp \
 		moc_client_worker.cpp \
+		moc_commande_worker.cpp \
 		moc_cuisine.cpp \
 		moc_database.cpp \
+		moc_ingredients_worker.cpp \
+		moc_location_worker.cpp \
 		moc_materiel_worker.cpp \
+		moc_materielcuisine_worker.cpp \
 		moc_plat_worker.cpp \
 		moc_restauranttable_worker.cpp \
 		moc_salle_restauration.cpp \
@@ -82,15 +91,20 @@ SOURCES       = ../../client.cpp \
 OBJECTS       = client.o \
 		client_worker.o \
 		commande.o \
+		commande_worker.o \
 		cuisine.o \
 		database.o \
 		employe.o \
+		employe_worker.o \
 		ingredients.o \
+		ingredients_worker.o \
 		location.o \
+		location_worker.o \
 		main.o \
 		materiel_commun.o \
 		materiel_cuisine.o \
 		materiel_worker.o \
+		materielcuisine_worker.o \
 		menu.o \
 		plat.o \
 		plat_worker.o \
@@ -100,9 +114,13 @@ OBJECTS       = client.o \
 		tableau_bord.o \
 		qrc_images.o \
 		moc_client_worker.o \
+		moc_commande_worker.o \
 		moc_cuisine.o \
 		moc_database.o \
+		moc_ingredients_worker.o \
+		moc_location_worker.o \
 		moc_materiel_worker.o \
+		moc_materielcuisine_worker.o \
 		moc_plat_worker.o \
 		moc_restauranttable_worker.o \
 		moc_salle_restauration.o \
@@ -319,14 +337,19 @@ DIST          = /home/narcisse/anaconda3/mkspecs/features/spec_pre.prf \
 		../../../../RESTAURANT.pro ../../client.h \
 		../../client_worker.h \
 		../../commande.h \
+		../../commande_worker.h \
 		../../cuisine.h \
 		../../database.h \
 		../../employe.h \
+		../../employe_worker.h \
 		../../ingredients.h \
+		../../ingredients_worker.h \
 		../../location.h \
+		../../location_worker.h \
 		../../materiel_commun.h \
 		../../materiel_cuisine.h \
 		../../materiel_worker.h \
+		../../materielcuisine_worker.h \
 		../../menu.h \
 		../../plat.h \
 		../../plat_worker.h \
@@ -336,15 +359,20 @@ DIST          = /home/narcisse/anaconda3/mkspecs/features/spec_pre.prf \
 		../../tableau_bord.h ../../client.cpp \
 		../../client_worker.cpp \
 		../../commande.cpp \
+		../../commande_worker.cpp \
 		../../cuisine.cpp \
 		../../database.cpp \
 		../../employe.cpp \
+		../../employe_worker.cpp \
 		../../ingredients.cpp \
+		../../ingredients_worker.cpp \
 		../../location.cpp \
+		../../location_worker.cpp \
 		../../main.cpp \
 		../../materiel_commun.cpp \
 		../../materiel_cuisine.cpp \
 		../../materiel_worker.cpp \
+		../../materielcuisine_worker.cpp \
 		../../menu.cpp \
 		../../plat.cpp \
 		../../plat_worker.cpp \
@@ -802,8 +830,8 @@ distdir: FORCE
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents ../../images.qrc $(DISTDIR)/
 	$(COPY_FILE) --parents /home/narcisse/anaconda3/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents ../../client.h ../../client_worker.h ../../commande.h ../../cuisine.h ../../database.h ../../employe.h ../../ingredients.h ../../location.h ../../materiel_commun.h ../../materiel_cuisine.h ../../materiel_worker.h ../../menu.h ../../plat.h ../../plat_worker.h ../../restauranttable.h ../../restauranttable_worker.h ../../salle_restauration.h ../../tableau_bord.h $(DISTDIR)/
-	$(COPY_FILE) --parents ../../client.cpp ../../client_worker.cpp ../../commande.cpp ../../cuisine.cpp ../../database.cpp ../../employe.cpp ../../ingredients.cpp ../../location.cpp ../../main.cpp ../../materiel_commun.cpp ../../materiel_cuisine.cpp ../../materiel_worker.cpp ../../menu.cpp ../../plat.cpp ../../plat_worker.cpp ../../restauranttable.cpp ../../restauranttable_worker.cpp ../../salle_restauration.cpp ../../tableau_bord.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents ../../client.h ../../client_worker.h ../../commande.h ../../commande_worker.h ../../cuisine.h ../../database.h ../../employe.h ../../employe_worker.h ../../ingredients.h ../../ingredients_worker.h ../../location.h ../../location_worker.h ../../materiel_commun.h ../../materiel_cuisine.h ../../materiel_worker.h ../../materielcuisine_worker.h ../../menu.h ../../plat.h ../../plat_worker.h ../../restauranttable.h ../../restauranttable_worker.h ../../salle_restauration.h ../../tableau_bord.h $(DISTDIR)/
+	$(COPY_FILE) --parents ../../client.cpp ../../client_worker.cpp ../../commande.cpp ../../commande_worker.cpp ../../cuisine.cpp ../../database.cpp ../../employe.cpp ../../employe_worker.cpp ../../ingredients.cpp ../../ingredients_worker.cpp ../../location.cpp ../../location_worker.cpp ../../main.cpp ../../materiel_commun.cpp ../../materiel_cuisine.cpp ../../materiel_worker.cpp ../../materielcuisine_worker.cpp ../../menu.cpp ../../plat.cpp ../../plat_worker.cpp ../../restauranttable.cpp ../../restauranttable_worker.cpp ../../salle_restauration.cpp ../../tableau_bord.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents ../../cuisine.ui ../../salle_restauration.ui ../../tableau_bord.ui $(DISTDIR)/
 
 
@@ -855,9 +883,9 @@ compiler_moc_predefs_clean:
 moc_predefs.h: /home/narcisse/anaconda3/mkspecs/features/data/dummy.cpp
 	g++ -pipe -g -std=gnu++1z -Wall -Wextra -dM -E -o moc_predefs.h /home/narcisse/anaconda3/mkspecs/features/data/dummy.cpp
 
-compiler_moc_header_make_all: moc_client_worker.cpp moc_cuisine.cpp moc_database.cpp moc_materiel_worker.cpp moc_plat_worker.cpp moc_restauranttable_worker.cpp moc_salle_restauration.cpp moc_tableau_bord.cpp
+compiler_moc_header_make_all: moc_client_worker.cpp moc_commande_worker.cpp moc_cuisine.cpp moc_database.cpp moc_ingredients_worker.cpp moc_location_worker.cpp moc_materiel_worker.cpp moc_materielcuisine_worker.cpp moc_plat_worker.cpp moc_restauranttable_worker.cpp moc_salle_restauration.cpp moc_tableau_bord.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) moc_client_worker.cpp moc_cuisine.cpp moc_database.cpp moc_materiel_worker.cpp moc_plat_worker.cpp moc_restauranttable_worker.cpp moc_salle_restauration.cpp moc_tableau_bord.cpp
+	-$(DEL_FILE) moc_client_worker.cpp moc_commande_worker.cpp moc_cuisine.cpp moc_database.cpp moc_ingredients_worker.cpp moc_location_worker.cpp moc_materiel_worker.cpp moc_materielcuisine_worker.cpp moc_plat_worker.cpp moc_restauranttable_worker.cpp moc_salle_restauration.cpp moc_tableau_bord.cpp
 moc_client_worker.cpp: ../../client_worker.h \
 		/home/narcisse/anaconda3/include/qt/QtCore/QThread \
 		/home/narcisse/anaconda3/include/qt/QtCore/qthread.h \
@@ -927,6 +955,76 @@ moc_client_worker.cpp: ../../client_worker.h \
 		moc_predefs.h \
 		/home/narcisse/anaconda3/bin/moc
 	/home/narcisse/anaconda3/bin/moc $(DEFINES) --include /home/narcisse/Desktop/Project/Programmation_Concurrente_Projet/RESTAURANT/build/Desktop-Debug/moc_predefs.h -I/home/narcisse/anaconda3/mkspecs/linux-g++ -I/home/narcisse/Desktop/Project/Programmation_Concurrente_Projet/RESTAURANT -I/home/narcisse/anaconda3/include/qt -I/home/narcisse/anaconda3/include/qt/QtWidgets -I/home/narcisse/anaconda3/include/qt/QtGui -I/home/narcisse/anaconda3/include/qt/QtSql -I/home/narcisse/anaconda3/include/qt/QtCore -I. -I/usr/include/c++/13 -I/usr/include/x86_64-linux-gnu/c++/13 -I/usr/include/c++/13/backward -I/usr/lib/gcc/x86_64-linux-gnu/13/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../../client_worker.h -o moc_client_worker.cpp
+
+moc_commande_worker.cpp: ../../commande_worker.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/QThread \
+		/home/narcisse/anaconda3/include/qt/QtCore/qthread.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobject.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobjectdefs.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qnamespace.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qglobal.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qconfig-bootstrapped.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qconfig.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qtcore-config.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qsystemdetection.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qprocessordetection.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcompilerdetection.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qtypeinfo.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qsysinfo.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qlogging.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qflags.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qbasicatomic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic_bootstrap.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qgenericatomic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic_cxx11.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic_msvc.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qglobalstatic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qmutex.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qnumeric.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qversiontagging.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobjectdefs_impl.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstring.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qchar.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qbytearray.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qrefcount.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qarraydata.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringliteral.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringalgorithms.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringview.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringbuilder.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qlist.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qalgorithms.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qiterator.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qhashfunctions.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qpair.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qvector.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcontainertools_impl.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qpoint.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qbytearraylist.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringlist.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qregexp.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringmatcher.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcoreevent.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qscopedpointer.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qmetatype.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qvarlengtharray.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcontainerfwd.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobject_impl.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qdeadlinetimer.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qelapsedtimer.h \
+		../../commande.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/QObject \
+		/home/narcisse/anaconda3/include/qt/QtCore/QString \
+		/home/narcisse/anaconda3/include/qt/QtCore/QVector \
+		/home/narcisse/anaconda3/include/qt/QtSql/QSqlQuery \
+		/home/narcisse/anaconda3/include/qt/QtSql/qsqlquery.h \
+		/home/narcisse/anaconda3/include/qt/QtSql/qtsqlglobal.h \
+		/home/narcisse/anaconda3/include/qt/QtSql/qtsql-config.h \
+		/home/narcisse/anaconda3/include/qt/QtSql/qsqldatabase.h \
+		moc_predefs.h \
+		/home/narcisse/anaconda3/bin/moc
+	/home/narcisse/anaconda3/bin/moc $(DEFINES) --include /home/narcisse/Desktop/Project/Programmation_Concurrente_Projet/RESTAURANT/build/Desktop-Debug/moc_predefs.h -I/home/narcisse/anaconda3/mkspecs/linux-g++ -I/home/narcisse/Desktop/Project/Programmation_Concurrente_Projet/RESTAURANT -I/home/narcisse/anaconda3/include/qt -I/home/narcisse/anaconda3/include/qt/QtWidgets -I/home/narcisse/anaconda3/include/qt/QtGui -I/home/narcisse/anaconda3/include/qt/QtSql -I/home/narcisse/anaconda3/include/qt/QtCore -I. -I/usr/include/c++/13 -I/usr/include/x86_64-linux-gnu/c++/13 -I/usr/include/c++/13/backward -I/usr/lib/gcc/x86_64-linux-gnu/13/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../../commande_worker.h -o moc_commande_worker.cpp
 
 moc_cuisine.cpp: ../../cuisine.h \
 		/home/narcisse/anaconda3/include/qt/QtWidgets/QMainWindow \
@@ -1105,6 +1203,146 @@ moc_database.cpp: ../../database.h \
 		/home/narcisse/anaconda3/bin/moc
 	/home/narcisse/anaconda3/bin/moc $(DEFINES) --include /home/narcisse/Desktop/Project/Programmation_Concurrente_Projet/RESTAURANT/build/Desktop-Debug/moc_predefs.h -I/home/narcisse/anaconda3/mkspecs/linux-g++ -I/home/narcisse/Desktop/Project/Programmation_Concurrente_Projet/RESTAURANT -I/home/narcisse/anaconda3/include/qt -I/home/narcisse/anaconda3/include/qt/QtWidgets -I/home/narcisse/anaconda3/include/qt/QtGui -I/home/narcisse/anaconda3/include/qt/QtSql -I/home/narcisse/anaconda3/include/qt/QtCore -I. -I/usr/include/c++/13 -I/usr/include/x86_64-linux-gnu/c++/13 -I/usr/include/c++/13/backward -I/usr/lib/gcc/x86_64-linux-gnu/13/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../../database.h -o moc_database.cpp
 
+moc_ingredients_worker.cpp: ../../ingredients_worker.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/QThread \
+		/home/narcisse/anaconda3/include/qt/QtCore/qthread.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobject.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobjectdefs.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qnamespace.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qglobal.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qconfig-bootstrapped.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qconfig.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qtcore-config.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qsystemdetection.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qprocessordetection.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcompilerdetection.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qtypeinfo.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qsysinfo.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qlogging.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qflags.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qbasicatomic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic_bootstrap.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qgenericatomic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic_cxx11.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic_msvc.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qglobalstatic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qmutex.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qnumeric.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qversiontagging.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobjectdefs_impl.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstring.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qchar.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qbytearray.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qrefcount.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qarraydata.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringliteral.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringalgorithms.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringview.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringbuilder.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qlist.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qalgorithms.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qiterator.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qhashfunctions.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qpair.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qvector.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcontainertools_impl.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qpoint.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qbytearraylist.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringlist.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qregexp.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringmatcher.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcoreevent.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qscopedpointer.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qmetatype.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qvarlengtharray.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcontainerfwd.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobject_impl.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qdeadlinetimer.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qelapsedtimer.h \
+		../../ingredients.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/QObject \
+		/home/narcisse/anaconda3/include/qt/QtCore/QString \
+		/home/narcisse/anaconda3/include/qt/QtCore/QVector \
+		/home/narcisse/anaconda3/include/qt/QtSql/QSqlQuery \
+		/home/narcisse/anaconda3/include/qt/QtSql/qsqlquery.h \
+		/home/narcisse/anaconda3/include/qt/QtSql/qtsqlglobal.h \
+		/home/narcisse/anaconda3/include/qt/QtSql/qtsql-config.h \
+		/home/narcisse/anaconda3/include/qt/QtSql/qsqldatabase.h \
+		moc_predefs.h \
+		/home/narcisse/anaconda3/bin/moc
+	/home/narcisse/anaconda3/bin/moc $(DEFINES) --include /home/narcisse/Desktop/Project/Programmation_Concurrente_Projet/RESTAURANT/build/Desktop-Debug/moc_predefs.h -I/home/narcisse/anaconda3/mkspecs/linux-g++ -I/home/narcisse/Desktop/Project/Programmation_Concurrente_Projet/RESTAURANT -I/home/narcisse/anaconda3/include/qt -I/home/narcisse/anaconda3/include/qt/QtWidgets -I/home/narcisse/anaconda3/include/qt/QtGui -I/home/narcisse/anaconda3/include/qt/QtSql -I/home/narcisse/anaconda3/include/qt/QtCore -I. -I/usr/include/c++/13 -I/usr/include/x86_64-linux-gnu/c++/13 -I/usr/include/c++/13/backward -I/usr/lib/gcc/x86_64-linux-gnu/13/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../../ingredients_worker.h -o moc_ingredients_worker.cpp
+
+moc_location_worker.cpp: ../../location_worker.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/QThread \
+		/home/narcisse/anaconda3/include/qt/QtCore/qthread.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobject.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobjectdefs.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qnamespace.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qglobal.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qconfig-bootstrapped.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qconfig.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qtcore-config.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qsystemdetection.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qprocessordetection.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcompilerdetection.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qtypeinfo.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qsysinfo.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qlogging.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qflags.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qbasicatomic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic_bootstrap.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qgenericatomic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic_cxx11.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic_msvc.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qglobalstatic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qmutex.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qnumeric.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qversiontagging.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobjectdefs_impl.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstring.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qchar.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qbytearray.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qrefcount.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qarraydata.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringliteral.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringalgorithms.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringview.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringbuilder.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qlist.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qalgorithms.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qiterator.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qhashfunctions.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qpair.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qvector.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcontainertools_impl.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qpoint.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qbytearraylist.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringlist.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qregexp.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringmatcher.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcoreevent.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qscopedpointer.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qmetatype.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qvarlengtharray.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcontainerfwd.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobject_impl.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qdeadlinetimer.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qelapsedtimer.h \
+		../../location.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/QObject \
+		/home/narcisse/anaconda3/include/qt/QtCore/QString \
+		/home/narcisse/anaconda3/include/qt/QtCore/QVector \
+		/home/narcisse/anaconda3/include/qt/QtSql/QSqlQuery \
+		/home/narcisse/anaconda3/include/qt/QtSql/qsqlquery.h \
+		/home/narcisse/anaconda3/include/qt/QtSql/qtsqlglobal.h \
+		/home/narcisse/anaconda3/include/qt/QtSql/qtsql-config.h \
+		/home/narcisse/anaconda3/include/qt/QtSql/qsqldatabase.h \
+		moc_predefs.h \
+		/home/narcisse/anaconda3/bin/moc
+	/home/narcisse/anaconda3/bin/moc $(DEFINES) --include /home/narcisse/Desktop/Project/Programmation_Concurrente_Projet/RESTAURANT/build/Desktop-Debug/moc_predefs.h -I/home/narcisse/anaconda3/mkspecs/linux-g++ -I/home/narcisse/Desktop/Project/Programmation_Concurrente_Projet/RESTAURANT -I/home/narcisse/anaconda3/include/qt -I/home/narcisse/anaconda3/include/qt/QtWidgets -I/home/narcisse/anaconda3/include/qt/QtGui -I/home/narcisse/anaconda3/include/qt/QtSql -I/home/narcisse/anaconda3/include/qt/QtCore -I. -I/usr/include/c++/13 -I/usr/include/x86_64-linux-gnu/c++/13 -I/usr/include/c++/13/backward -I/usr/lib/gcc/x86_64-linux-gnu/13/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../../location_worker.h -o moc_location_worker.cpp
+
 moc_materiel_worker.cpp: ../../materiel_worker.h \
 		/home/narcisse/anaconda3/include/qt/QtCore/QThread \
 		/home/narcisse/anaconda3/include/qt/QtCore/qthread.h \
@@ -1174,6 +1412,76 @@ moc_materiel_worker.cpp: ../../materiel_worker.h \
 		moc_predefs.h \
 		/home/narcisse/anaconda3/bin/moc
 	/home/narcisse/anaconda3/bin/moc $(DEFINES) --include /home/narcisse/Desktop/Project/Programmation_Concurrente_Projet/RESTAURANT/build/Desktop-Debug/moc_predefs.h -I/home/narcisse/anaconda3/mkspecs/linux-g++ -I/home/narcisse/Desktop/Project/Programmation_Concurrente_Projet/RESTAURANT -I/home/narcisse/anaconda3/include/qt -I/home/narcisse/anaconda3/include/qt/QtWidgets -I/home/narcisse/anaconda3/include/qt/QtGui -I/home/narcisse/anaconda3/include/qt/QtSql -I/home/narcisse/anaconda3/include/qt/QtCore -I. -I/usr/include/c++/13 -I/usr/include/x86_64-linux-gnu/c++/13 -I/usr/include/c++/13/backward -I/usr/lib/gcc/x86_64-linux-gnu/13/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../../materiel_worker.h -o moc_materiel_worker.cpp
+
+moc_materielcuisine_worker.cpp: ../../materielcuisine_worker.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/QThread \
+		/home/narcisse/anaconda3/include/qt/QtCore/qthread.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobject.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobjectdefs.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qnamespace.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qglobal.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qconfig-bootstrapped.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qconfig.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qtcore-config.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qsystemdetection.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qprocessordetection.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcompilerdetection.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qtypeinfo.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qsysinfo.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qlogging.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qflags.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qbasicatomic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic_bootstrap.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qgenericatomic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic_cxx11.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic_msvc.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qglobalstatic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qmutex.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qnumeric.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qversiontagging.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobjectdefs_impl.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstring.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qchar.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qbytearray.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qrefcount.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qarraydata.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringliteral.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringalgorithms.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringview.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringbuilder.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qlist.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qalgorithms.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qiterator.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qhashfunctions.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qpair.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qvector.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcontainertools_impl.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qpoint.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qbytearraylist.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringlist.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qregexp.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringmatcher.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcoreevent.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qscopedpointer.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qmetatype.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qvarlengtharray.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcontainerfwd.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobject_impl.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qdeadlinetimer.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qelapsedtimer.h \
+		../../materiel_cuisine.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/QObject \
+		/home/narcisse/anaconda3/include/qt/QtCore/QString \
+		/home/narcisse/anaconda3/include/qt/QtCore/QVector \
+		/home/narcisse/anaconda3/include/qt/QtSql/QSqlQuery \
+		/home/narcisse/anaconda3/include/qt/QtSql/qsqlquery.h \
+		/home/narcisse/anaconda3/include/qt/QtSql/qtsqlglobal.h \
+		/home/narcisse/anaconda3/include/qt/QtSql/qtsql-config.h \
+		/home/narcisse/anaconda3/include/qt/QtSql/qsqldatabase.h \
+		moc_predefs.h \
+		/home/narcisse/anaconda3/bin/moc
+	/home/narcisse/anaconda3/bin/moc $(DEFINES) --include /home/narcisse/Desktop/Project/Programmation_Concurrente_Projet/RESTAURANT/build/Desktop-Debug/moc_predefs.h -I/home/narcisse/anaconda3/mkspecs/linux-g++ -I/home/narcisse/Desktop/Project/Programmation_Concurrente_Projet/RESTAURANT -I/home/narcisse/anaconda3/include/qt -I/home/narcisse/anaconda3/include/qt/QtWidgets -I/home/narcisse/anaconda3/include/qt/QtGui -I/home/narcisse/anaconda3/include/qt/QtSql -I/home/narcisse/anaconda3/include/qt/QtCore -I. -I/usr/include/c++/13 -I/usr/include/x86_64-linux-gnu/c++/13 -I/usr/include/c++/13/backward -I/usr/lib/gcc/x86_64-linux-gnu/13/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../../materielcuisine_worker.h -o moc_materielcuisine_worker.cpp
 
 moc_plat_worker.cpp: ../../plat_worker.h \
 		/home/narcisse/anaconda3/include/qt/QtCore/QThread \
@@ -1722,8 +2030,151 @@ client_worker.o: ../../client_worker.cpp ../../client_worker.h \
 		/home/narcisse/anaconda3/include/qt/QtSql/qsqldatabase.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o client_worker.o ../../client_worker.cpp
 
-commande.o: ../../commande.cpp ../../commande.h
+commande.o: ../../commande.cpp ../../commande.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/QObject \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobject.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobjectdefs.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qnamespace.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qglobal.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qconfig-bootstrapped.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qconfig.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qtcore-config.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qsystemdetection.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qprocessordetection.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcompilerdetection.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qtypeinfo.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qsysinfo.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qlogging.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qflags.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qbasicatomic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic_bootstrap.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qgenericatomic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic_cxx11.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic_msvc.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qglobalstatic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qmutex.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qnumeric.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qversiontagging.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobjectdefs_impl.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstring.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qchar.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qbytearray.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qrefcount.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qarraydata.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringliteral.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringalgorithms.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringview.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringbuilder.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qlist.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qalgorithms.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qiterator.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qhashfunctions.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qpair.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qvector.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcontainertools_impl.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qpoint.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qbytearraylist.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringlist.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qregexp.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringmatcher.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcoreevent.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qscopedpointer.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qmetatype.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qvarlengtharray.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcontainerfwd.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobject_impl.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/QString \
+		/home/narcisse/anaconda3/include/qt/QtCore/QVector \
+		/home/narcisse/anaconda3/include/qt/QtSql/QSqlQuery \
+		/home/narcisse/anaconda3/include/qt/QtSql/qsqlquery.h \
+		/home/narcisse/anaconda3/include/qt/QtSql/qtsqlglobal.h \
+		/home/narcisse/anaconda3/include/qt/QtSql/qtsql-config.h \
+		/home/narcisse/anaconda3/include/qt/QtSql/qsqldatabase.h \
+		/home/narcisse/anaconda3/include/qt/QtSql/QSqlError \
+		/home/narcisse/anaconda3/include/qt/QtSql/qsqlerror.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/QDebug \
+		/home/narcisse/anaconda3/include/qt/QtCore/qdebug.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qhash.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qmap.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qtextstream.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qiodevice.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qlocale.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qvariant.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qshareddata.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qset.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcontiguouscache.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qsharedpointer.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qsharedpointer_impl.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o commande.o ../../commande.cpp
+
+commande_worker.o: ../../commande_worker.cpp ../../commande_worker.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/QThread \
+		/home/narcisse/anaconda3/include/qt/QtCore/qthread.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobject.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobjectdefs.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qnamespace.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qglobal.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qconfig-bootstrapped.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qconfig.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qtcore-config.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qsystemdetection.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qprocessordetection.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcompilerdetection.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qtypeinfo.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qsysinfo.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qlogging.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qflags.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qbasicatomic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic_bootstrap.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qgenericatomic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic_cxx11.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic_msvc.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qglobalstatic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qmutex.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qnumeric.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qversiontagging.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobjectdefs_impl.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstring.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qchar.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qbytearray.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qrefcount.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qarraydata.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringliteral.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringalgorithms.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringview.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringbuilder.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qlist.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qalgorithms.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qiterator.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qhashfunctions.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qpair.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qvector.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcontainertools_impl.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qpoint.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qbytearraylist.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringlist.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qregexp.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringmatcher.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcoreevent.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qscopedpointer.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qmetatype.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qvarlengtharray.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcontainerfwd.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobject_impl.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qdeadlinetimer.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qelapsedtimer.h \
+		../../commande.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/QObject \
+		/home/narcisse/anaconda3/include/qt/QtCore/QString \
+		/home/narcisse/anaconda3/include/qt/QtCore/QVector \
+		/home/narcisse/anaconda3/include/qt/QtSql/QSqlQuery \
+		/home/narcisse/anaconda3/include/qt/QtSql/qsqlquery.h \
+		/home/narcisse/anaconda3/include/qt/QtSql/qtsqlglobal.h \
+		/home/narcisse/anaconda3/include/qt/QtSql/qtsql-config.h \
+		/home/narcisse/anaconda3/include/qt/QtSql/qsqldatabase.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o commande_worker.o ../../commande_worker.cpp
 
 cuisine.o: ../../cuisine.cpp ../../cuisine.h \
 		/home/narcisse/anaconda3/include/qt/QtWidgets/QMainWindow \
@@ -1977,11 +2428,300 @@ database.o: ../../database.cpp ../../database.h \
 employe.o: ../../employe.cpp ../../employe.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o employe.o ../../employe.cpp
 
-ingredients.o: ../../ingredients.cpp ../../ingredients.h
+employe_worker.o: ../../employe_worker.cpp ../../employe_worker.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o employe_worker.o ../../employe_worker.cpp
+
+ingredients.o: ../../ingredients.cpp ../../ingredients.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/QObject \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobject.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobjectdefs.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qnamespace.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qglobal.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qconfig-bootstrapped.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qconfig.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qtcore-config.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qsystemdetection.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qprocessordetection.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcompilerdetection.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qtypeinfo.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qsysinfo.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qlogging.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qflags.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qbasicatomic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic_bootstrap.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qgenericatomic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic_cxx11.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic_msvc.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qglobalstatic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qmutex.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qnumeric.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qversiontagging.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobjectdefs_impl.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstring.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qchar.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qbytearray.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qrefcount.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qarraydata.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringliteral.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringalgorithms.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringview.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringbuilder.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qlist.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qalgorithms.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qiterator.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qhashfunctions.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qpair.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qvector.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcontainertools_impl.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qpoint.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qbytearraylist.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringlist.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qregexp.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringmatcher.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcoreevent.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qscopedpointer.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qmetatype.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qvarlengtharray.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcontainerfwd.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobject_impl.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/QString \
+		/home/narcisse/anaconda3/include/qt/QtCore/QVector \
+		/home/narcisse/anaconda3/include/qt/QtSql/QSqlQuery \
+		/home/narcisse/anaconda3/include/qt/QtSql/qsqlquery.h \
+		/home/narcisse/anaconda3/include/qt/QtSql/qtsqlglobal.h \
+		/home/narcisse/anaconda3/include/qt/QtSql/qtsql-config.h \
+		/home/narcisse/anaconda3/include/qt/QtSql/qsqldatabase.h \
+		/home/narcisse/anaconda3/include/qt/QtSql/QSqlError \
+		/home/narcisse/anaconda3/include/qt/QtSql/qsqlerror.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/QDebug \
+		/home/narcisse/anaconda3/include/qt/QtCore/qdebug.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qhash.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qmap.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qtextstream.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qiodevice.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qlocale.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qvariant.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qshareddata.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qset.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcontiguouscache.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qsharedpointer.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qsharedpointer_impl.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ingredients.o ../../ingredients.cpp
 
-location.o: ../../location.cpp ../../location.h
+ingredients_worker.o: ../../ingredients_worker.cpp ../../ingredients_worker.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/QThread \
+		/home/narcisse/anaconda3/include/qt/QtCore/qthread.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobject.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobjectdefs.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qnamespace.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qglobal.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qconfig-bootstrapped.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qconfig.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qtcore-config.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qsystemdetection.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qprocessordetection.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcompilerdetection.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qtypeinfo.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qsysinfo.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qlogging.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qflags.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qbasicatomic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic_bootstrap.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qgenericatomic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic_cxx11.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic_msvc.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qglobalstatic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qmutex.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qnumeric.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qversiontagging.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobjectdefs_impl.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstring.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qchar.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qbytearray.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qrefcount.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qarraydata.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringliteral.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringalgorithms.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringview.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringbuilder.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qlist.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qalgorithms.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qiterator.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qhashfunctions.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qpair.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qvector.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcontainertools_impl.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qpoint.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qbytearraylist.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringlist.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qregexp.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringmatcher.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcoreevent.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qscopedpointer.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qmetatype.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qvarlengtharray.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcontainerfwd.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobject_impl.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qdeadlinetimer.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qelapsedtimer.h \
+		../../ingredients.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/QObject \
+		/home/narcisse/anaconda3/include/qt/QtCore/QString \
+		/home/narcisse/anaconda3/include/qt/QtCore/QVector \
+		/home/narcisse/anaconda3/include/qt/QtSql/QSqlQuery \
+		/home/narcisse/anaconda3/include/qt/QtSql/qsqlquery.h \
+		/home/narcisse/anaconda3/include/qt/QtSql/qtsqlglobal.h \
+		/home/narcisse/anaconda3/include/qt/QtSql/qtsql-config.h \
+		/home/narcisse/anaconda3/include/qt/QtSql/qsqldatabase.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ingredients_worker.o ../../ingredients_worker.cpp
+
+location.o: ../../location.cpp ../../location.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/QObject \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobject.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobjectdefs.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qnamespace.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qglobal.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qconfig-bootstrapped.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qconfig.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qtcore-config.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qsystemdetection.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qprocessordetection.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcompilerdetection.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qtypeinfo.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qsysinfo.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qlogging.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qflags.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qbasicatomic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic_bootstrap.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qgenericatomic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic_cxx11.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic_msvc.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qglobalstatic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qmutex.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qnumeric.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qversiontagging.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobjectdefs_impl.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstring.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qchar.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qbytearray.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qrefcount.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qarraydata.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringliteral.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringalgorithms.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringview.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringbuilder.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qlist.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qalgorithms.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qiterator.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qhashfunctions.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qpair.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qvector.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcontainertools_impl.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qpoint.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qbytearraylist.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringlist.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qregexp.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringmatcher.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcoreevent.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qscopedpointer.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qmetatype.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qvarlengtharray.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcontainerfwd.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobject_impl.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/QString \
+		/home/narcisse/anaconda3/include/qt/QtCore/QVector \
+		/home/narcisse/anaconda3/include/qt/QtSql/QSqlQuery \
+		/home/narcisse/anaconda3/include/qt/QtSql/qsqlquery.h \
+		/home/narcisse/anaconda3/include/qt/QtSql/qtsqlglobal.h \
+		/home/narcisse/anaconda3/include/qt/QtSql/qtsql-config.h \
+		/home/narcisse/anaconda3/include/qt/QtSql/qsqldatabase.h \
+		/home/narcisse/anaconda3/include/qt/QtSql/QSqlError \
+		/home/narcisse/anaconda3/include/qt/QtSql/qsqlerror.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/QDebug \
+		/home/narcisse/anaconda3/include/qt/QtCore/qdebug.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qhash.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qmap.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qtextstream.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qiodevice.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qlocale.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qvariant.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qshareddata.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qset.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcontiguouscache.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qsharedpointer.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qsharedpointer_impl.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o location.o ../../location.cpp
+
+location_worker.o: ../../location_worker.cpp ../../location_worker.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/QThread \
+		/home/narcisse/anaconda3/include/qt/QtCore/qthread.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobject.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobjectdefs.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qnamespace.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qglobal.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qconfig-bootstrapped.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qconfig.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qtcore-config.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qsystemdetection.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qprocessordetection.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcompilerdetection.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qtypeinfo.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qsysinfo.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qlogging.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qflags.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qbasicatomic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic_bootstrap.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qgenericatomic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic_cxx11.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic_msvc.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qglobalstatic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qmutex.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qnumeric.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qversiontagging.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobjectdefs_impl.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstring.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qchar.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qbytearray.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qrefcount.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qarraydata.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringliteral.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringalgorithms.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringview.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringbuilder.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qlist.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qalgorithms.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qiterator.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qhashfunctions.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qpair.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qvector.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcontainertools_impl.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qpoint.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qbytearraylist.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringlist.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qregexp.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringmatcher.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcoreevent.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qscopedpointer.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qmetatype.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qvarlengtharray.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcontainerfwd.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobject_impl.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qdeadlinetimer.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qelapsedtimer.h \
+		../../location.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/QObject \
+		/home/narcisse/anaconda3/include/qt/QtCore/QString \
+		/home/narcisse/anaconda3/include/qt/QtCore/QVector \
+		/home/narcisse/anaconda3/include/qt/QtSql/QSqlQuery \
+		/home/narcisse/anaconda3/include/qt/QtSql/qsqlquery.h \
+		/home/narcisse/anaconda3/include/qt/QtSql/qtsqlglobal.h \
+		/home/narcisse/anaconda3/include/qt/QtSql/qtsql-config.h \
+		/home/narcisse/anaconda3/include/qt/QtSql/qsqldatabase.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o location_worker.o ../../location_worker.cpp
 
 main.o: ../../main.cpp ../../salle_restauration.h \
 		/home/narcisse/anaconda3/include/qt/QtWidgets/QMainWindow \
@@ -2189,7 +2929,82 @@ materiel_commun.o: ../../materiel_commun.cpp ../../materiel_commun.h \
 		/home/narcisse/anaconda3/include/qt/QtCore/qsharedpointer_impl.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o materiel_commun.o ../../materiel_commun.cpp
 
-materiel_cuisine.o: ../../materiel_cuisine.cpp ../../materiel_cuisine.h
+materiel_cuisine.o: ../../materiel_cuisine.cpp ../../materiel_cuisine.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/QObject \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobject.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobjectdefs.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qnamespace.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qglobal.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qconfig-bootstrapped.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qconfig.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qtcore-config.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qsystemdetection.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qprocessordetection.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcompilerdetection.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qtypeinfo.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qsysinfo.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qlogging.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qflags.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qbasicatomic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic_bootstrap.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qgenericatomic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic_cxx11.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic_msvc.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qglobalstatic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qmutex.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qnumeric.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qversiontagging.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobjectdefs_impl.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstring.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qchar.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qbytearray.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qrefcount.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qarraydata.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringliteral.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringalgorithms.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringview.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringbuilder.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qlist.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qalgorithms.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qiterator.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qhashfunctions.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qpair.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qvector.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcontainertools_impl.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qpoint.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qbytearraylist.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringlist.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qregexp.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringmatcher.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcoreevent.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qscopedpointer.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qmetatype.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qvarlengtharray.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcontainerfwd.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobject_impl.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/QString \
+		/home/narcisse/anaconda3/include/qt/QtCore/QVector \
+		/home/narcisse/anaconda3/include/qt/QtSql/QSqlQuery \
+		/home/narcisse/anaconda3/include/qt/QtSql/qsqlquery.h \
+		/home/narcisse/anaconda3/include/qt/QtSql/qtsqlglobal.h \
+		/home/narcisse/anaconda3/include/qt/QtSql/qtsql-config.h \
+		/home/narcisse/anaconda3/include/qt/QtSql/qsqldatabase.h \
+		/home/narcisse/anaconda3/include/qt/QtSql/QSqlError \
+		/home/narcisse/anaconda3/include/qt/QtSql/qsqlerror.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/QDebug \
+		/home/narcisse/anaconda3/include/qt/QtCore/qdebug.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qhash.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qmap.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qtextstream.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qiodevice.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qlocale.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qvariant.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qshareddata.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qset.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcontiguouscache.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qsharedpointer.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qsharedpointer_impl.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o materiel_cuisine.o ../../materiel_cuisine.cpp
 
 materiel_worker.o: ../../materiel_worker.cpp ../../materiel_worker.h \
@@ -2259,6 +3074,74 @@ materiel_worker.o: ../../materiel_worker.cpp ../../materiel_worker.h \
 		/home/narcisse/anaconda3/include/qt/QtSql/qtsql-config.h \
 		/home/narcisse/anaconda3/include/qt/QtSql/qsqldatabase.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o materiel_worker.o ../../materiel_worker.cpp
+
+materielcuisine_worker.o: ../../materielcuisine_worker.cpp ../../materielcuisine_worker.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/QThread \
+		/home/narcisse/anaconda3/include/qt/QtCore/qthread.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobject.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobjectdefs.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qnamespace.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qglobal.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qconfig-bootstrapped.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qconfig.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qtcore-config.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qsystemdetection.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qprocessordetection.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcompilerdetection.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qtypeinfo.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qsysinfo.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qlogging.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qflags.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qbasicatomic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic_bootstrap.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qgenericatomic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic_cxx11.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qatomic_msvc.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qglobalstatic.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qmutex.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qnumeric.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qversiontagging.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobjectdefs_impl.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstring.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qchar.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qbytearray.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qrefcount.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qarraydata.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringliteral.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringalgorithms.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringview.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringbuilder.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qlist.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qalgorithms.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qiterator.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qhashfunctions.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qpair.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qvector.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcontainertools_impl.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qpoint.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qbytearraylist.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringlist.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qregexp.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qstringmatcher.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcoreevent.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qscopedpointer.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qmetatype.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qvarlengtharray.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qcontainerfwd.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qobject_impl.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qdeadlinetimer.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/qelapsedtimer.h \
+		../../materiel_cuisine.h \
+		/home/narcisse/anaconda3/include/qt/QtCore/QObject \
+		/home/narcisse/anaconda3/include/qt/QtCore/QString \
+		/home/narcisse/anaconda3/include/qt/QtCore/QVector \
+		/home/narcisse/anaconda3/include/qt/QtSql/QSqlQuery \
+		/home/narcisse/anaconda3/include/qt/QtSql/qsqlquery.h \
+		/home/narcisse/anaconda3/include/qt/QtSql/qtsqlglobal.h \
+		/home/narcisse/anaconda3/include/qt/QtSql/qtsql-config.h \
+		/home/narcisse/anaconda3/include/qt/QtSql/qsqldatabase.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o materielcuisine_worker.o ../../materielcuisine_worker.cpp
 
 menu.o: ../../menu.cpp ../../menu.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o menu.o ../../menu.cpp
@@ -2861,14 +3744,26 @@ qrc_images.o: qrc_images.cpp
 moc_client_worker.o: moc_client_worker.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_client_worker.o moc_client_worker.cpp
 
+moc_commande_worker.o: moc_commande_worker.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_commande_worker.o moc_commande_worker.cpp
+
 moc_cuisine.o: moc_cuisine.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_cuisine.o moc_cuisine.cpp
 
 moc_database.o: moc_database.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_database.o moc_database.cpp
 
+moc_ingredients_worker.o: moc_ingredients_worker.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_ingredients_worker.o moc_ingredients_worker.cpp
+
+moc_location_worker.o: moc_location_worker.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_location_worker.o moc_location_worker.cpp
+
 moc_materiel_worker.o: moc_materiel_worker.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_materiel_worker.o moc_materiel_worker.cpp
+
+moc_materielcuisine_worker.o: moc_materielcuisine_worker.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_materielcuisine_worker.o moc_materielcuisine_worker.cpp
 
 moc_plat_worker.o: moc_plat_worker.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_plat_worker.o moc_plat_worker.cpp
