@@ -6,232 +6,252 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>804</width>
-    <height>606</height>
+    <width>1200</width>
+    <height>800</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Restaurant Manager Pro - Tableau de Bord</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QFrame" name="Salle_restauration">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>20</y>
-      <width>241</width>
-      <height>311</height>
-     </rect>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>20</number>
     </property>
-    <property name="frameShape">
-     <enum>QFrame::Shape::StyledPanel</enum>
+    <property name="leftMargin">
+     <number>20</number>
     </property>
-    <property name="frameShadow">
-     <enum>QFrame::Shadow::Raised</enum>
+    <property name="topMargin">
+     <number>20</number>
     </property>
-    <widget class="QFrame" name="Nmbre_place_occupee">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>10</y>
-       <width>221</width>
-       <height>71</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Shape::StyledPanel</enum>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Shadow::Raised</enum>
-     </property>
-    </widget>
-    <widget class="QFrame" name="Nmbre_plat_servi">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>90</y>
-       <width>221</width>
-       <height>71</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Shape::StyledPanel</enum>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Shadow::Raised</enum>
-     </property>
-    </widget>
-    <widget class="QFrame" name="Nmbre_boisson">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>170</y>
-       <width>221</width>
-       <height>71</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Shape::StyledPanel</enum>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Shadow::Raised</enum>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QFrame" name="Stock_plonge">
-    <property name="geometry">
-     <rect>
-      <x>280</x>
-      <y>320</y>
-      <width>231</width>
-      <height>211</height>
-     </rect>
+    <property name="rightMargin">
+     <number>20</number>
     </property>
-    <property name="frameShape">
-     <enum>QFrame::Shape::StyledPanel</enum>
+    <property name="bottomMargin">
+     <number>20</number>
     </property>
-    <property name="frameShadow">
-     <enum>QFrame::Shadow::Raised</enum>
-    </property>
-    <widget class="QFrame" name="Ustensile_pret">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>20</y>
-       <width>191</width>
-       <height>81</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Shape::StyledPanel</enum>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Shadow::Raised</enum>
-     </property>
-    </widget>
-    <widget class="QFrame" name="ustensile_sales">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>120</y>
-       <width>191</width>
-       <height>71</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Shape::StyledPanel</enum>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Shadow::Raised</enum>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QFrame" name="Cuisine">
-    <property name="geometry">
-     <rect>
-      <x>540</x>
-      <y>80</y>
-      <width>231</width>
-      <height>321</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Shape::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Shadow::Raised</enum>
-    </property>
-    <widget class="QFrame" name="Stock_reserve">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>10</y>
-       <width>211</width>
-       <height>71</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Shape::StyledPanel</enum>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Shadow::Raised</enum>
-     </property>
-    </widget>
-    <widget class="QFrame" name="Stock_chambrefroide">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>90</y>
-       <width>211</width>
-       <height>71</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Shape::StyledPanel</enum>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Shadow::Raised</enum>
-     </property>
-    </widget>
-    <widget class="QFrame" name="Stock_congelateur">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>170</y>
-       <width>211</width>
-       <height>71</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Shape::StyledPanel</enum>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Shadow::Raised</enum>
-     </property>
-    </widget>
-    <widget class="QFrame" name="Nmbre_de_plat_cuisine">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>250</y>
-       <width>211</width>
-       <height>61</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Shape::StyledPanel</enum>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Shadow::Raised</enum>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QPushButton" name="pushButton">
-    <property name="geometry">
-     <rect>
-      <x>690</x>
-      <y>20</y>
-      <width>83</width>
-      <height>29</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>SORTIE</string>
-    </property>
-   </widget>
+    <item>
+     <widget class="QLabel" name="labelDashboardTitle">
+      <property name="text">
+       <string>🏪 Tableau de Bord - Restaurant</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="styleSheet">
+       <string>
+        font-size: 24px;
+        color: #37474f;
+        font-weight: bold;
+        padding: 20px;
+        background-color: white;
+        border-radius: 12px;
+        margin-bottom: 10px;
+       </string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QFrame" name="Salle_restauration">
+        <property name="styleSheet">
+         <string>
+          QFrame {
+              background-color: #e3f2fd;
+              border-radius: 12px;
+              padding: 15px;
+          }
+         </string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayoutSalle">
+         <item>
+          <widget class="QLabel" name="labelSalleRestauration">
+           <property name="text">
+            <string>🍽️ Salle de Restauration</string>
+           </property>
+           <property name="styleSheet">
+            <string>
+             font-size: 18px;
+             font-weight: bold;
+             color: #1565c0;
+             margin-bottom: 10px;
+            </string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QGridLayout" name="gridLayoutSalle">
+           <item row="0" column="0">
+            <widget class="QLabel" name="labelPlacesOccupees">
+             <property name="text">
+              <string>Places Occupées :</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLCDNumber" name="lcdPlacesOccupees">
+             <property name="styleSheet">
+              <string>
+               background-color: #1565c0;
+               color: white;
+               border-radius: 6px;
+              </string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0" colspan="2">
+            <widget class="QProgressBar" name="progressPlacesOccupees">
+             <property name="value">
+              <number>50</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="Stock_plonge">
+        <property name="styleSheet">
+         <string>
+          QFrame {
+              background-color: #e8f5e9;
+              border-radius: 12px;
+              padding: 15px;
+          }
+         </string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayoutStock">
+         <item>
+          <widget class="QLabel" name="labelStockPlonge">
+           <property name="text">
+            <string>🧼 Stock Plonge</string>
+           </property>
+           <property name="styleSheet">
+            <string>
+             font-size: 18px;
+             font-weight: bold;
+             color: #2e7d32;
+             margin-bottom: 10px;
+            </string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QGridLayout" name="gridLayoutStock">
+           <item row="0" column="0">
+            <widget class="QLabel" name="labelStockLevel">
+             <property name="text">
+              <string>Stock Total :</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLCDNumber" name="lcdStockLevel">
+             <property name="styleSheet">
+              <string>
+               background-color: #2e7d32;
+               color: white;
+               border-radius: 6px;
+              </string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="Cuisine">
+        <property name="styleSheet">
+         <string>
+          QFrame {
+              background-color: #fff3e0;
+              border-radius: 12px;
+              padding: 15px;
+          }
+         </string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayoutCuisine">
+         <item>
+          <widget class="QLabel" name="labelCuisine">
+           <property name="text">
+            <string>👨‍🍳 Cuisine</string>
+           </property>
+           <property name="styleSheet">
+            <string>
+             font-size: 18px;
+             font-weight: bold;
+             color: #f57c00;
+             margin-bottom: 10px;
+            </string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QGridLayout" name="gridLayoutCuisine">
+           <item row="0" column="0">
+            <widget class="QLabel" name="labelPlatsPrepares">
+             <property name="text">
+              <string>Plats Préparés :</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLCDNumber" name="lcdPlatsPrepares">
+             <property name="styleSheet">
+              <string>
+               background-color: #f57c00;
+               color: white;
+               border-radius: 6px;
+              </string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="buttonLayout">
+      <item>
+       <widget class="QPushButton" name="pushButtonExit">
+        <property name="text">
+         <string>🚪 SORTIE</string>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>180</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string>
+          QPushButton {
+              background-color: #d32f2f;
+              color: white;
+              border-radius: 8px;
+              padding: 10px;
+          }
+          QPushButton:hover {
+              background-color: #b71c1c;
+          }
+         </string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
   </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>804</width>
-     <height>22</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>
 </ui>
+

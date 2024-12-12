@@ -2,10 +2,11 @@
 #define TABLEAU_BORD_H
 
 #include <QMainWindow>
+#include "database.h"
 
-namespace Ui {
-class Tableau_bord;
-}
+QT_BEGIN_NAMESPACE
+namespace Ui { class Tableau_bord; }
+QT_END_NAMESPACE
 
 class Tableau_bord : public QMainWindow
 {
@@ -17,6 +18,10 @@ public:
 
 private:
     Ui::Tableau_bord *ui;
+    Database *db;
+
+    void updateDashboard();          // Mettre à jour les données du tableau de bord
+    void checkCriticalSituations();  // Vérifier les situations limites
 };
 
 #endif // TABLEAU_BORD_H
