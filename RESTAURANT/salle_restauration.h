@@ -1,23 +1,35 @@
-#ifndef SALLE_RESTAURATION_H
-#define SALLE_RESTAURATION_H
+#ifndef RESTAURANTVIEW_H
+#define RESTAURANTVIEW_H
 
-#include <QMainWindow>
+#include <QGraphicsView>
+#include <QGraphicsScene>
+#include <QPushButton>
+#include "graphicelement.h"
 
-QT_BEGIN_NAMESPACE
-namespace Ui {
-class Salle_restauration;
-}
-QT_END_NAMESPACE
-
-class Salle_restauration : public QMainWindow
-{
+class RestaurantView : public QGraphicsView {
     Q_OBJECT
-
 public:
-    Salle_restauration(QWidget *parent = nullptr);
-    ~Salle_restauration();
+    explicit RestaurantView(QWidget *parent = nullptr);
+
+    QGraphicsScene* getScene() { return scene; }
+
+signals:
+    void startSimulation();
+    void pauseSimulation();
+    void stopSimulation();
+    void accelSimulation();
+    void openDashboard();
 
 private:
-    Ui::Salle_restauration *ui;
+    QGraphicsScene *scene;
+
+    QPushButton *startButton;
+    QPushButton *pauseButton;
+    QPushButton *stopButton;
+    QPushButton *dashboardButton;
+
+    void setupButtons(); // Méthode pour initialiser les boutons
 };
-#endif // SALLE_RESTAURATION_H
+
+#endif // RESTAURANTVIEW_H
+

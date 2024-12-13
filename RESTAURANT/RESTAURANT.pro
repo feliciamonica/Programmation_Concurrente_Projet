@@ -17,6 +17,7 @@ SOURCES += \
     database.cpp \
     employe.cpp \
     employe_worker.cpp \
+    graphicelement.cpp \
     ingredients.cpp \
     ingredients_worker.cpp \
     location.cpp \
@@ -29,6 +30,7 @@ SOURCES += \
     menu.cpp \
     plat.cpp \
     plat_worker.cpp \
+    restaurantcontroller.cpp \
     restauranttable.cpp \
     restauranttable_worker.cpp \
     salle_restauration.cpp \
@@ -43,6 +45,7 @@ HEADERS += \
     database.h \
     employe.h \
     employe_worker.h \
+    graphicelement.h \
     ingredients.h \
     ingredients_worker.h \
     location.h \
@@ -54,6 +57,7 @@ HEADERS += \
     menu.h \
     plat.h \
     plat_worker.h \
+    restaurantcontroller.h \
     restauranttable.h \
     restauranttable_worker.h \
     salle_restauration.h \
