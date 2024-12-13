@@ -1,4 +1,4 @@
-QT       += core gui sql
+QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -9,64 +9,32 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    client.cpp \
-    client_worker.cpp \
-    commande.cpp \
-    commande_worker.cpp \
     cuisine.cpp \
-    database.cpp \
-    employe.cpp \
-    employe_worker.cpp \
-    graphicelement.cpp \
-    ingredients.cpp \
-    ingredients_worker.cpp \
-    location.cpp \
-    location_worker.cpp \
+    element.cpp \
+    elementcontroller.cpp \
     main.cpp \
-    materiel_commun.cpp \
-    materiel_cuisine.cpp \
-    materiel_worker.cpp \
-    materielcuisine_worker.cpp \
-    menu.cpp \
-    plat.cpp \
-    plat_worker.cpp \
-    restaurantcontroller.cpp \
-    restauranttable.cpp \
-    restauranttable_worker.cpp \
+    position.cpp \
+    positioncontroller.cpp \
     salle_restauration.cpp \
+    staffcuisine.cpp \
     tableau_bord.cpp
 
 HEADERS += \
-    client.h \
-    client_worker.h \
-    commande.h \
-    commande_worker.h \
     cuisine.h \
-    database.h \
-    employe.h \
-    employe_worker.h \
-    graphicelement.h \
-    ingredients.h \
-    ingredients_worker.h \
-    location.h \
-    location_worker.h \
-    materiel_commun.h \
-    materiel_cuisine.h \
-    materiel_worker.h \
-    materielcuisine_worker.h \
-    menu.h \
-    plat.h \
-    plat_worker.h \
-    restaurantcontroller.h \
-    restauranttable.h \
-    restauranttable_worker.h \
+    element.h \
+    elementcontroller.h \
+    position.h \
+    positioncontroller.h \
     salle_restauration.h \
+    staffcuisine.h \
     tableau_bord.h
 
 FORMS += \
     cuisine.ui \
     salle_restauration.ui \
     tableau_bord.ui
+
+
 
 RESOURCES  += images.qrc
 

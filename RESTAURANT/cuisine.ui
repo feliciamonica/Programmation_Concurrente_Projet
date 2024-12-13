@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1498</width>
+    <width>1526</width>
     <height>715</height>
    </rect>
   </property>
@@ -14,145 +14,32 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QFrame" name="Congelateur">
-    <property name="geometry">
-     <rect>
-      <x>950</x>
-      <y>560</y>
-      <width>211</width>
-      <height>91</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Shape::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Shadow::Raised</enum>
-    </property>
-   </widget>
-   <widget class="QFrame" name="Chambrefroide">
-    <property name="geometry">
-     <rect>
-      <x>1300</x>
-      <y>490</y>
-      <width>151</width>
-      <height>161</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Shape::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Shadow::Raised</enum>
-    </property>
-   </widget>
-   <widget class="QFrame" name="Reserve">
-    <property name="geometry">
-     <rect>
-      <x>1280</x>
-      <y>130</y>
-      <width>181</width>
-      <height>201</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Shape::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Shadow::Raised</enum>
-    </property>
-   </widget>
-   <widget class="QFrame" name="EspacePlonge">
-    <property name="geometry">
-     <rect>
-      <x>270</x>
-      <y>549</y>
-      <width>491</width>
-      <height>91</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Shape::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Shadow::Raised</enum>
-    </property>
-   </widget>
-   <widget class="QFrame" name="Espace_travail">
-    <property name="geometry">
-     <rect>
-      <x>420</x>
-      <y>270</y>
-      <width>581</width>
-      <height>151</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Shape::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Shadow::Raised</enum>
-    </property>
-   </widget>
-   <widget class="QFrame" name="Cuisiniere_et_four">
-    <property name="geometry">
-     <rect>
-      <x>310</x>
-      <y>40</y>
-      <width>811</width>
-      <height>101</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Shape::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Shadow::Raised</enum>
-    </property>
-   </widget>
-   <widget class="QFrame" name="Comptoir_chef">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>20</y>
-      <width>81</width>
-      <height>181</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Shape::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Shadow::Raised</enum>
-    </property>
-   </widget>
-   <widget class="QFrame" name="Comptoir_Plonge">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>430</y>
-      <width>81</width>
-      <height>211</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Shape::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Shadow::Raised</enum>
-    </property>
-   </widget>
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>1320</x>
-      <y>10</y>
-      <width>101</width>
-      <height>41</height>
+      <x>1000</x>
+      <y>0</y>
+      <width>75</width>
+      <height>24</height>
      </rect>
     </property>
     <property name="text">
      <string>Dashboard</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="cuisine">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>40</y>
+      <width>1211</width>
+      <height>611</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/sol3jpg.jpg);
+border: 2px;
+</string>
     </property>
    </widget>
   </widget>
@@ -161,13 +48,15 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1498</width>
-     <height>25</height>
+     <width>1526</width>
+     <height>33</height>
     </rect>
    </property>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
  <connections/>
 </ui>

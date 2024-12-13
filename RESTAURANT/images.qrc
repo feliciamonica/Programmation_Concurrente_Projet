@@ -1,30 +1,25 @@
 <RCC>
-  <qresource>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/chefdeRang1.png</file>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/chefDeRang2.png</file>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/client_2.png</file>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/commis_salle.png</file>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/client.png</file>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/commis_salle.png</file>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/maitreDhotel.png</file>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/serveur1.png</file>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/serveur2.png</file>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/serveur3.png</file>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/serveur4.png</file>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/sol restaurant.png</file>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/comptoir_restaurant.png</file>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/table6.png</file>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/porte.png</file>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/table8.png</file>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/table4.png</file>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/table2.png</file>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/table10.png</file>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/stop.png</file>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/accelerate.png</file>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/pause.png</file>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/sol restaurant.png</file>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/start.png</file>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/comptoir.png</file>
-    <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/comptoir_restaurant.png</file>
-  </qresource>
+    <qresource prefix="/">
+        <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/sol2.jpg</file>
+        <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/frigo.png</file>
+        <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/machinealaver.png</file>
+        <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/cuisiniere (3).png</file>
+        <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/solsalleamanger.png</file>
+        <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/chambrefroide.png</file>
+        <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/comptoir.png</file>
+        <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/chef_cuisinier.png</file>
+        <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/commis1.png</file>
+        <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/commis2.png</file>
+        <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/plan de travail.jpg</file>
+        <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/plongeur.png</file>
+        <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/reserve.jpg</file>
+        <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/sol3jpg.jpg</file>
+        <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/plan.jpg</file>
+        <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/plan2.jpg</file>
+        <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/poubelle.png</file>
+        <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/robinet.jpg</file>
+        <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/robinet.png</file>
+        <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/chef_partie1.png</file>
+        <file>build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/debug/images/chef_partie2.png</file>
+    </qresource>
 </RCC>
